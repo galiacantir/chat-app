@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    background-color: #333;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2, p{
+    margin:0;
+}
+
+.phone{
+    background-color: #555;
+    width: 80%;
+    height: 90%;
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left:0;
+}
+
+/* --- CHAT APP STYLES --- */
+
+.app{
+    width: 100%;
+    height: 100%;
+    background-color: #777;
+}
+
+.app header,
+.app footer{
+    background-color: #123;
+    height: 8%;
+}
+
+.app main{
+    height: 84%;
+    /* overflow: auto; */
+    overflow-y: scroll;
+    background-color: #234;
+}
+
+
+
+/* --- CONTACTS --- */
+
+.contacts__profile{
+    height: 6em;
+    padding: 0.5em;
+}
+
+
+.profile__avatar {
+    position: relative;
+    height: 5em;
+    width: 5em;
+
+    float: left;
+    /* background-color: aqua; */
+    border-radius: 100%;
+    /* overflow: hidden; */
+    margin-right: 0.3em;
+}
+
+.profile__avatar::before{
+    content: "";
+    display: block;
+    width: 1em;
+    height: 1em;
+    /* background-color: green; */
+    position: absolute;
+    border-radius: 100%;
+    /* border: 0.1em solid #234; */
+    top: .25em;
+    left: .25em;
+    z-index: 1;
+}
+
+/* .status--online .profile__avatar::before{
+    background-color: green;
+    border: 0.1em solid #234;
+
+} */
+
+.status--offline .profile__avatar::before{
+    background-color: gray;
+    border: 0.1em solid #234;
+}
+
+.status--5min .profile__avatar::before{
+    background-color: #00e64d;
+    border: 0.1em solid #234;
+}
+
+.status--15min .profile__avatar::before{
+    background-color: #4dff88;
+    border: 0.1em solid #234;
+}
+
+.status--30min .profile__avatar::before{
+    background-color: #b3ffcc;
+    border: 0.1em solid #234;
+}
+
+
+.seen--status, 
+.sent--status, 
+.not-sent--status{
+    width: 1em;
+
+}
+
+
+
+
+.profile__avatar img{
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.message__content{
+    float: left;
+    color: whitesmoke;
+}
+
+.message__status{
+    float: right;
+    color: #AAA;
+}

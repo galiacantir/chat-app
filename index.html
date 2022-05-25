@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/61968c8b40.js" crossorigin="anonymous"></script>
+    <title>Viber Chat</title>
+</head>
+<body>
+
+    <!-- 
+        
+        Homeworks: 
+        - variables: paleta de culori
+        - unitati de masura (vmin, vmax)
+        - dark / light theming
+
+        HW1: contacts list ol vs ul?
+      + HW2: make the layout 1 contact: html + semantic, 
+        spaces, align, mode, unitati de masura.
+        HW3. bem methodology
+      + HW4. add class status - 5, 10, 15 min - green shades
+      + HW.5 seen status / sent ... - am adaugat prin imagini, n-am gasit icons status
+     -->
+     <div class="phone">
+         <!-- <div class="status"></div> -->
+        <section class="app">
+            <header></header>
+            <main>
+                <ul class="contacts">
+
+                    <li class="contacts__profile status--online status--5min">
+                        <div class="profile__avatar" >
+                            <img src="https://i.picsum.photos/id/423/300/300.jpg?hmac=b-ZC4rgdo_5hNS1yFs9pkVkPN7Co7dJ8TBAGFCPhYCs" alt="martin">
+                        </div>
+                        
+                        <div class="message__content">
+                            <h2>Martin Kuerbs</h2>
+                            <p>Send me the message please.</p> 
+                        </div>
+                        
+                        <span class="message__status"><img class="sent--status" src="img/sent.png" alt=""> 09:30</span>
+                    </li>
+
+                    <li class="contacts__profile status--offline">
+                        <div class="profile__avatar" >
+                            <img src="https://i.picsum.photos/id/556/300/300.jpg?hmac=7vQjFlsl7DinigvWkZaBrVc8q_79qyclXgrtqDkAfU4" alt="Mary Peterson">
+                        </div>
+                        
+                        <div class="message__content">
+                            <h2>Mary Peterson</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <span class="message__status"><img class="seen--status" src="img/seen.png" alt=""> 12:43</span>
+                    </li> 
+
+                    <li class="contacts__profile status--online status--15min">
+                        <div class="profile__avatar">
+                            <img src="https://i.picsum.photos/id/385/300/300.jpg?hmac=NKqXah2xpvrZZll9P5bC8SANCtvGJNeTLc3M1LYLCW8" alt="John Doe">
+                        </div>
+                        
+                        <div class="message__content">
+                            <h2>John Doe</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        
+                        <span class="message__status"><img class="seen--status" src="img/seen.png" alt=""> 10:12</span>
+                    </li>
+
+                    <li class="contacts__profile status--online status--30min">
+                        <div class="profile__avatar" >
+                            <img src="https://i.picsum.photos/id/423/300/300.jpg?hmac=b-ZC4rgdo_5hNS1yFs9pkVkPN7Co7dJ8TBAGFCPhYCs" alt="martin">
+                        </div>
+                        
+                        <div class="message__content">
+                            <h2>Martin Kuerbs</h2>
+                            <p>Send me the message please.</p> 
+                        </div>
+                        
+                        <span class="message__status"><img class="not-sent--status" src="img/not-sent.png" alt=""> 09:30</span>
+                    </li>
+
+                    <li class="contacts__profile status--online status--5min">
+                        <div class="profile__avatar" >
+                            <img src="https://i.picsum.photos/id/556/300/300.jpg?hmac=7vQjFlsl7DinigvWkZaBrVc8q_79qyclXgrtqDkAfU4" alt="Mary Peterson">
+                        </div>
+                        
+                        <div class="message__content">
+                            <h2>Mary Peterson</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <span class="message__status"><img class="seen--status" src="img/seen.png" alt=""> 12:43</span>
+                    </li> 
+
+                    <li class="contacts__profile status--offline">
+                        <div class="profile__avatar">
+                            <img src="https://i.picsum.photos/id/385/300/300.jpg?hmac=NKqXah2xpvrZZll9P5bC8SANCtvGJNeTLc3M1LYLCW8" alt="John Doe">
+                        </div>
+                        
+                        <div class="message__content">
+                            <h2>John Doe</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        
+                        <span class="message__status"><img class="not-sent--status" src="img/not-sent.png" alt=""> 10:12</span>
+                    </li>
+
+                    <li class="contacts__profile status--online status--30min">
+                        <div class="profile__avatar" >
+                            <img src="https://i.picsum.photos/id/423/300/300.jpg?hmac=b-ZC4rgdo_5hNS1yFs9pkVkPN7Co7dJ8TBAGFCPhYCs" alt="martin">
+                        </div>
+                        
+                        <div class="message__content">
+                            <h2>Martin Kuerbs</h2>
+                            <p>Send me the message please.</p> 
+                        </div>
+                        
+                        <span class="message__status"><img class="sent--status" src="img/sent.png" alt=""> 09:30</span>
+                    </li>
+
+                    <li class="contacts__profile status--offline">
+                        <div class="profile__avatar" >
+                            <img src="https://i.picsum.photos/id/556/300/300.jpg?hmac=7vQjFlsl7DinigvWkZaBrVc8q_79qyclXgrtqDkAfU4" alt="Mary Peterson">
+                        </div>
+                        
+                        <div class="message__content">
+                            <h2>Mary Peterson</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <span class="message__status"><img class="not-sent--status" src="img/not-sent.png" alt=""> 12:43</span>
+                    </li> 
+
+                    <li class="contacts__profile status--online status--15min">
+                        <div class="profile__avatar">
+                            <img src="https://i.picsum.photos/id/385/300/300.jpg?hmac=NKqXah2xpvrZZll9P5bC8SANCtvGJNeTLc3M1LYLCW8" alt="John Doe">
+                        </div>
+                        
+                        <div class="message__content">
+                            <h2>John Doe</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        
+                        <span class="message__status"><img class="sent--status" src="img/sent.png" alt=""> 10:12</span>
+                    </li>
+
+                    
+  
+                </ul>
+            </main>
+            <footer></footer>
+     </section>
+    </div>
+</body>
+</html>
